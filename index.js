@@ -3,7 +3,7 @@ require("./mongo")
 const express = require("express")
 const { readProduct } = require("./Controller/productControll")
 const app = express()
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 const cors = require("cors")
 
 //Midlewar
